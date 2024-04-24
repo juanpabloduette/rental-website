@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  background-color: #000000;
+  color: #f7f7f7;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.contenedor img {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+}
+
+.contenedor a {
+  color: #d3d3d3;
+  padding: 10px;
+}
+.contenedor a:hover {
+  text-decoration: underline;
+}
+
+.gracias {
+  text-align: center;
+  padding: 100px;
+}
+
+/* ESTILOS DE MENSAJE PHP  */
+
+.msgphp {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: #f7f7f7;
+}
+
+.msgphpbox {
+  border-radius: 30px;
+  transition: 0.25s ease all;
+  padding: 40px;
+  background-color: rgb(17, 17, 17);
+}
+
+.msgphp .msgphpbox .logoword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Gothic", sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  letter-spacing: 1px;
+}

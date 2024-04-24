@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rental Motorcycles & ATV´S" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="plugin/components/Font Awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="plugin/whatsapp-chat-support.css" />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <title>GOOD BIKES ONLY</title>
+  </head>
+  <body id="top">
+    <header id="headerdown">
+      <div class="menu" id="homesec">
+        <img src="images/logo.png" class="logo" alt="Logo" width="100px" />
+        <nav id="menu" class="nav-links">
+          <ul>
+            <li>
+              <a href="#top" class="link1" id="home"
+                ><i class="fa fa-home"></i> Inicio</a
+              >
+            </li>
+            <li>
+              <a href="#scooterssec" class="link2" id="us"
+                ><i class="fa fa-users"></i> Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="#grupo__nombre" class="link3" id="rent"
+                ><i class="fa fa-moped"></i> Rentar Ya!</a
+              >
+            </li>
+            <li>
+              <a href="#formulario" class="link4" id="contact"
+                ><i class="fa fa-envelope"></i> Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="menu_responsive" id="menu_responsive">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="language-buttons">
+          <button
+            id="languageButton"
+            data-language="es"
+            onclick="changeLanguage()"
+          >
+            <img
+              id="flag"
+              src="images/eeuuflag.jpg"
+              alt="USA"
+              width="22"
+              height="11"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <main class="landing-page">
+        <div class="front-page" id="front-page">
+          <video class="video-background" autoplay loop muted>
+            <source src="video/vid.mp4" type="video/mp4" />
+            <track src="" kind="captions" srclang="en" label="en" />
+            <!-- Si el navegador no admite el formato de video, puedes agregar alternativas aquí -->
+          </video>
+          <div class="animation-container">
+            <h1>
+              <span class="letter" style="--delay: 1">G</span>
+              <span class="letter" style="--delay: 2">O</span>
+              <span class="letter" style="--delay: 3">O</span>
+              <span class="letter" style="--delay: 4">D</span>
+              <span class="letter disapear"> </span>
+              <span class="letter"> </span>
+              <span class="letter"> </span>
+              <span class="letter" style="--delay: 5">B</span>
+              <span class="letter" style="--delay: 6">I</span>
+              <span class="letter" style="--delay: 7">K</span>
+              <span class="letter" style="--delay: 8">E</span>
+              <span class="letter" style="--delay: 9">S</span>
+              <span class="letter disapear"> </span>
+              <span class="letter"> </span>
+              <span class="letter"> </span>
+              <span class="letter" style="--delay: 10">O</span>
+              <span class="letter" style="--delay: 11">N</span>
+              <span class="letter" style="--delay: 12">L</span>
+              <span class="letter" style="--delay: 13">Y</span>
+            </h1>
+          </div>
+          <i id="arrow" class="fa-sharp fa-solid fa-arrow-down"></i>
+        </div>
+        <section class="scooters-section" id="scooterssec">
+          <div class="scooters">
+            <div class="scooters__box">
+              <div>
+                <h1 id="title" class="title">
+                  Renta de scooters y atv's en <strong>Tulum</strong> - México
+                </h1>
+                <p class="description" id="description">
+                  ¡Experimenta una forma divertida y eficiente de desplazarte
+                  por la ciudad! Nuestros scooters están disponibles para
+                  alquiler por horas o días, y te brindan la flexibilidad de
+                  explorar a tu propio ritmo.
+                </p>
+              </div>
+              <!--slide-->
+              <div class="slider__box">
+                <div class="slider">
+                  <div class="slide">
+                    <img src="images/1.jpg" alt="Photo1" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/14.jpg" alt="Photo2" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/4.jpg" alt="Photo3" />
+                  </div>
+
+                  <button class="btn-slide prev" aria-label="prev">
+                    <i class="fas fa-3x fa-chevron-circle-left"></i>
+                  </button>
+                  <button class="btn-slide next" aria-label="next">
+                    <i class="fas fa-3x fa-chevron-circle-right"></i>
+                  </button>
+                </div>
+                <div class="dots-container">
+                  <span class="dot active" data-slide="0"></span>
+                  <span class="dot" data-slide="1"></span>
+                  <span class="dot" data-slide="2"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="discounts" id="discounts">
+          <div class="discounts-content">
+            <img src="images/hot-sale.png" alt="Sale" class="saleimg" />
+            <h2>Maneja más y paga menos</h2>
+            <h3>Nuestros descuentos</h3>
+            <div class="table-discounts">
+              <div class="table-one">
+                <p><strong>1 day</strong> - +600 MXN</p>
+                <p><strong>2-3 days</strong> - no discount</p>
+                <p><strong>4-7 days</strong> - no discount</p>
+              </div>
+              <div class="table-two"></div>
+              <div class="table-three">
+                <p><strong>8-14 days</strong> - 10% discount</p>
+                <p><strong>15-29 days</strong> - 15% discount</p>
+                <p><strong>30+ days</strong> - 20-60% discount</p>
+              </div>
+            </div>
+            <div class="footer-discounts">
+              <div class="scooter">
+                <!--<img src="https://img2.freepng.es/20180611/wp/kisspng-scooter-computer-icons-motorcycle-honda-activa-pia-5b1e945ae0e214.6580221115287307149211.jpg" alt="scooter"/> -->
+                <p>Renta un scooter desde cualquier lugar de Tulum</p>
+              </div>
+
+              <div class="location">
+                <img
+                  src="https://thumb.tildacdn.com/tild3436-6566-4365-b261-386661626637/-/resize/70x/-/format/webp/map-location.png"
+                  alt="location"
+                />
+                <p>
+                  Te lo llevamos gratis a tu ubicación dentro de los 20-80
+                  minutos
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="textos">
+          <h1 class="text" id="easy">Rentar un scooter nunca fue tan facil</h1>
+          <p id="features">
+            Con nuestros scooters de alta calidad, podrás disfrutar de un paseo
+            suave y cómodo. Además, son ecológicos y no emiten gases
+            contaminantes, lo que contribuye a cuidar el medio ambiente.
+          </p>
+          <p id="offer">
+            Ya sea que necesites un scooter para un paseo turístico, para
+            desplazarte al trabajo o simplemente para divertirte, ¡nosotros
+            tenemos la solución perfecta para ti!
+          </p>
+          <h2 id="require">Solo 3 requisitos para rentar tu scooter:</h2>
+          <div class="pasos">
+            <div class="cards">
+              <img src="images/card.svg" alt="svg" width="40" height="40" />
+              <p id="license">Foto de una licencia de conductor vigente</p>
+            </div>
+            <div class="cards">
+              <img
+                src="images/Tilda_Icons_44_travel_roadmap.svg"
+                alt="svg"
+                width="40"
+                height="40"
+              />
+              <p id="address">Dirección y nombre del hotel donde se hospeda</p>
+            </div>
+            <div class="cards">
+              <img
+                src="images/re_credit.svg"
+                alt="svg"
+                width="40"
+                height="40"
+              />
+              <p id="pay">Depósito</p>
+            </div>
+          </div>
+          <p id="confirmation" class="confirmation">
+            Después de la confirmación de la reserva, podrá recoger el scooter
+            usted mismo en nuestra sucursal en <strong>Selina</strong> o
+            <strong>Aldea Zama</strong> (Tulum). O podemos entregar el scooter
+            en la ubicación deseada <strong>sin cargo</strong>.
+          </p>
+        </section>
+        <section class="vibes">
+          <img src="images/neon.gif" alt="Good Vibes Only" />
+        </section>
+        <section class="textos2">
+          <div class="gallery">
+            <img
+              src="images/1.jpg"
+              onclick="openPopup('images/1.jpg')"
+              alt="Imagen 1"
+            />
+            <img
+              src="images/2.jpg"
+              onclick="openPopup('images/2.jpg')"
+              alt="Imagen 2"
+            />
+            <img
+              src="images/3.jpg"
+              onclick="openPopup('images/3.jpg')"
+              alt="Imagen 3"
+            />
+            <img
+              src="images/4.jpg"
+              onclick="openPopup('images/4.jpg')"
+              alt="Imagen 4"
+            />
+            <img
+              src="images/5.jpg"
+              onclick="openPopup('images/5.jpg')"
+              alt="Imagen 5"
+            />
+            <img
+              src="images/6.jpg"
+              onclick="openPopup('images/6.jpg')"
+              alt="Imagen 6"
+            />
+            <img
+              src="images/7.jpg"
+              onclick="openPopup('images/7.jpg')"
+              alt="Imagen 7"
+            />
+            <img
+              src="images/8.jpg"
+              onclick="openPopup('images/8.jpg')"
+              alt="Imagen 8"
+            />
+            <img
+              src="images/9.jpg"
+              onclick="openPopup('images/9.jpg')"
+              alt="Imagen 9"
+            />
+            <img
+              src="images/10.jpg"
+              onclick="openPopup('images/10.jpg')"
+              alt="Imagen 10"
+            />
+            <img
+              src="images/11.jpg"
+              onclick="openPopup('images/11.jpg')"
+              alt="Imagen 11"
+            />
+            <img
+              src="images/12.jpg"
+              onclick="openPopup('images/12.jpg')"
+              alt="Imagen 12"
+            />
+            <img
+              src="images/13.jpg"
+              onclick="openPopup('images/13.jpg')"
+              alt="Imagen 13"
+            />
+            <img
+              src="images/14.jpg"
+              onclick="openPopup('images/14.jpg')"
+              alt="Imagen 14"
+            />
+            <img
+              src="images/15.jpg"
+              onclick="openPopup('images/15.jpg')"
+              alt="Imagen 15"
+            />
+          </div>
+
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <img id="popup-img" src="" alt="" />
+              <button class="popup-close" onclick="closePopup()">
+                &times;
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="section__formulario">
+          <h1 id="titlesform">Rentar ya!</h1>
+          <div class="datoscontacto">
+            <div class="datoscontacto-caja">
+              <img src="images/scooter-vespa.png" alt="Vespa" />
+              <p id="subtitleform">Rentar ya!</p>
+            </div>
+            <form
+              class="formulario"
+              id="formulario"
+              action="contacto.php"
+              method="POST"
+            >
+              <!-- Grupo: Nombre -->
+              <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label"
+                  >Nombre<span style="color: red"> *</span></label
+                >
+                <div class="formulario__grupo-input">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    class="formulario__input"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Ingrese nombre"
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">El campo está vacío</p>
+              </div>
+              <!-- Grupo: Correo Electronico -->
+              <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label"
+                  >Correo Electrónico</label
+                >
+                <div class="formulario__grupo-input">
+                  <input
+                    type="email"
+                    autocomplete="off"
+                    class="formulario__input"
+                    name="correo"
+                    id="correo"
+                    placeholder="correo@correo.com"
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un correo válido</p>
+              </div>
+              <!-- Grupo: Teléfono -->
+              <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    class="formulario__input"
+                    name="telefono"
+                    id="telefono"
+                    placeholder="9842804759"
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">
+                  El telefono solo puede contener números
+                </p>
+              </div>
+              <!-- Grupo: Fecha -->
+              <div class="formulario__grupo" id="grupo__fecha">
+                <label for="fecha" class="formulario__label">Fecha</label>
+                <div class="formulario__grupo-input">
+                  <input
+                    type="date"
+                    autocomplete="off"
+                    class="formulario__input"
+                    name="fecha"
+                    id="fecha"
+                    max="2500-12-31"
+                  />
+                  <i
+                    class="formulario__validacion-estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">Ingrese una fecha válida</p>
+              </div>
+              <!-- Grupo: Mensaje -->
+              <div class="formulario__grupo" id="grupo__mensaje">
+                <label for="mensaje" class="formulario__label">Mensaje</label>
+                <div class="formulario__grupo-input">
+                  <textarea
+                    class="formulario__input textarea"
+                    placeholder="Escribe tu mensaje"
+                    id="mensaje"
+                    name="mensaje"
+                    maxlength="120"
+                  ></textarea>
+                  <i
+                    class="formulario__validacion-estadoo fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input-error">El campo está vacío</p>
+              </div>
+
+              <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p
+                  class="formulario__mensaje-exito"
+                  id="formulario__mensaje-exito"
+                >
+                  Formulario enviado exitosamente!
+                </p>
+              </div>
+              <div class="formulario__mensaje" id="formulario__mensaje">
+                <p>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <b>Error:</b> Formulario incompleto.
+                </p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="menu__footer">
+          <ul>
+            <li>
+              <a href="#" id="home-footer" class="button__footer"
+                ><i class="fa fa-home"></i> Inicio</a
+              >
+            </li>
+            <li>
+              <a href="#" id="us-footer" class="button__footer"
+                ><i class="fa fa-users"></i> Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="#" id="contact-footer" class="button__footer"
+                ><i class="fa fa-envelope"></i> Contacto</a
+              >
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/goodbikesonly/"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/goodbikesonly_/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="development">
+          <a
+            href="http://www.juanpabloduette.com.ar"
+            target="_blank"
+            aria-label="Diseño Web"
+            >Desarrollo Web</a
+          ><i class="fa-solid fa-arrow-left"></i>
+        </div>
+      </footer>
+    </div>
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+      <div class="wcs_button_label">Consultas</div>
+      <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+      </div>
+      <div class="wcs_popup">
+        <div class="wcs_popup_close">
+          <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+          <span class="fa fa-whatsapp"></span>
+          <strong>Servicio al cliente</strong>
+          <div class="wcs_popup_header_description">
+            <p>¿Tenes una consulta? Chatea con nosotros en Whatsapp</p>
+          </div>
+        </div>
+        <div
+          class="wcs_popup_input"
+          data-number="541154945523"
+          data-availability='{ "monday":"08:00-17:00", "tuesday":"08:00-17:00", "wednesday":"08:00-17:00", "thursday":"08:00-17:00", "friday":"08:00-17:00", "saturday":"14:00-14:01", "sunday":"14:00-14:01" }'
+        >
+          <input type="text" placeholder="Escribi tu consulta" />
+          <i class="fa fa-play"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+          <img
+            src="https://www.pngitem.com/pimgs/m/22-223968_default-profile-picture-circle-hd-png-download.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Asegúrate de incluir la biblioteca de iconos Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/81e9130226.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"
+      integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+    <script src="plugin/components/moment/moment.min.js"></script>
+    <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script>
+    <!-- spanish language (es) -->
+    <script src="plugin/whatsapp-chat-support.js"></script>
+    <script>
+      $("#button-w").whatsappChatSupport({
+        defaultMsg: "",
+      });
+    </script>
+  </body>
+</html>
